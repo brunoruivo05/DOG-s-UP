@@ -1,0 +1,275 @@
+*{  
+    /* Deixa suave o scroll */
+    scroll-behavior: smooth; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: #0a0a0a;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+}
+.space{
+    padding-top: 200px;
+}
+.pi-icon, .logoSocial{
+    padding: 4px;
+}
+
+.txtHover{
+    position: relative;
+    color: #a0a0a0a0;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+ .txtHover:hover{
+    color: #ffffff;
+    /* text-shadow: 1px #ffffff; */
+}
+
+.txtHover:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}  
+
+.txtHover:hover:after {
+    width: 100%;
+}
+
+.colorSection1{
+    background-color: #a0a0a042;
+}
+
+.btn-outline-secondary{
+    color: white;
+    border: solid 1px #ff3c78;
+    transition: 0.4s;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #ff3c7671;
+    border: solid 1px #ff3c78;
+}
+
+/* Carrosel */
+
+.carousel-indicators .active {
+    background-color: #ff3c78;
+
+}
+
+.home-carrossel .carousel-item{
+    min-height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Efeitos de zoom icones das redes sociais */
+
+.zoom .logoSocial{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover .logoSocial{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.zoom .item-imagem{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover .item-imagem{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cursorDiv{
+    cursor: pointer;
+}
+
+/* Color h1 */
+
+.colorCopy{
+    height: 60px;
+    background-color: #ff3c7617;
+}
+
+.text-centrado{
+    padding-top: 20px;
+}
+
+h1{
+    color: #ff3c78;
+}
+hr{
+    background-color: #ff3c7675;
+}
+
+.img-info{
+    background-repeat: no-repeat;
+   background-position: center;
+}
+
+.p-10{
+    padding-top: 120px;
+}
+
+.p-20{
+    padding-top: 100px;
+}
+
+.p-30{
+    padding-top: 130px;
+}
+
+.size-galeria{
+    width: 300px;
+    height: 200px;
+}
+
+.object-imagem .item-imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.item-imagem{
+    border-radius: 5px;
+}
+
+/* CARDS */
+
+.w200{
+    width: 200px;
+}
+
+.card{
+    color: rgb(255, 255, 255);
+    border: solid 1px #ff3c78;
+    background-color: #5c545750;
+}
+
+.btn-primary{
+    background-color: #ff3c78;
+    border: #ff3c78;
+    transition: 0.4s;
+}
+
+.btn-primary:hover{
+    background-color: #ff3c7644;
+}
+
+/* Footer */
+
+.fundo-footer{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Formulario */
+
+.size-formulario{
+    width: 400px;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: solid 1px #ff3c7686;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+textarea{
+    height: 100px;
+    border: solid 1px #ff3c7686;
+    border-radius: 2px;
+}
+
+.btn {
+    color: white;
+    border: solid 1px #ff3c78;
+    transition: 0.4s;
+    background-color: #ff3c78;
+}
+
+.btn:hover{
+    color: #ffffff;
+    background-color: #ff3c7671;
+    border: solid 1px #ff3c78;
+}
+
+/* Footer */
+
+.space-img .img-information {
+    padding: 20px;
+}
+
+.zoom .logoInfo{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover .logoInfo{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* LightBox */
+
+.modal-img {
+   width: 100%;
+   background-size: cover;
+}
+
+.modal-body{
+    background-color: black;
+}
+
+/* botao de volta ao topo (banner) */
+
+.btnTopo{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    height: 40px;
+    width: 40px;
+    background: #ff3c78;
+    border: none;
+    border-radius: 20px;
+    display: none;
+}
+
+.btnTopo .img-topo{
+
+    width: 30px;
+}
